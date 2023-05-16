@@ -1,0 +1,36 @@
+POST http://localhost:3001/users/
+Content-Type: application/json
+
+{    
+    "name": "rahul123",
+    "password": "rahul@456",
+    "email":"rahul123@gmail.com"
+}
+###
+POST http://localhost:3001/login/
+Content-Type: application/json
+
+{    
+    "email": "rahul123@gmail.com",
+    "password": "rahul@456"
+}
+
+###
+
+GET http://localhost:3001/books
+
+###
+
+POST http://localhost:3001/add-book
+Content-Type: application/json
+{
+  "author": "Uday",
+  "title": "Javascript",
+  "pages": 232,
+  "year": 2020,
+  "country": "India",
+  "language": "Telugu"
+}
+
+###
+
